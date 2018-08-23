@@ -2,7 +2,14 @@
 """
 Created on Tue Aug 21 10:09:38 2018
 
-@author: Eduardo Answer <eduardonzinga111@hotmail.com>
+/**********************************************************
+**@author: Eduardo Answer <eduardonzinga111@hotmail.com> **
+**                                                       **
+** This library is built to plot geographical maps using **
+** plotly and cufflinks. T                               **
+**                                                       **
+**                                                       **
+*********************************************************/
 """
 
 try:
@@ -18,7 +25,7 @@ from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 
 init_notebook_mode(connected=True)
 
-#import cufflinks as cf
+import cufflinks as cf
 import pandas as pd
 
 data = dict(type = 'choropleth', 
@@ -34,7 +41,7 @@ layout = dict(geo = {'scope': 'usa'})
 choromap = go.Figure(data=[data], layout = layout)
 
 plot(choromap)
+print("P")
 
 
-df.iplot(kind='surface', colorscale='rgb')
 

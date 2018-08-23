@@ -18,7 +18,7 @@ from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 
 init_notebook_mode(connected=True)
 
-import cufflinks as cf
+#import cufflinks as cf
 import pandas as pd
 
 data = dict(type = 'choropleth', 
@@ -36,4 +36,5 @@ choromap = go.Figure(data=[data], layout = layout)
 plot(choromap)
 
 
+df.iplot(kind='surface', colorscale='rgb')
 
